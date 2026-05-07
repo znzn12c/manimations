@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/lorenz_attractor/1080p60/partial_movie_files/Introduction/455666127_2954522096_223132457.mp4'
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/lorenz_attractor/1080p60/partial_movie_files/Introduction/4241022046_1242323806_1388304653.mp4'
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/lorenz_attractor/1080p60/partial_movie_files/Introduction/4241022046_2172888599_1136508026.mp4'
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/lorenz_attractor/1080p60/partial_movie_files/Introduction/4241022046_4231186388_2358810818.mp4'

@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/lorenz_attractor/1080p60/partial_movie_files/LorenzAttractor/3523183718_2954522096_1388304653.mp4'
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/lorenz_attractor/1080p60/partial_movie_files/LorenzAttractor/3780790482_1242323806_1388304653.mp4'
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/lorenz_attractor/1080p60/partial_movie_files/LorenzAttractor/3780790482_2172888599_2474619236.mp4'
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/lorenz_attractor/1080p60/partial_movie_files/LorenzAttractor/3780790482_4231186388_2358810818.mp4'
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/lorenz_attractor/1080p60/partial_movie_files/LorenzAttractor/3780790482_4067785706_3913634830.mp4'
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/lorenz_attractor/1080p60/partial_movie_files/LorenzAttractor/3780790482_1862915502_3913634830.mp4'
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/lorenz_attractor/1080p60/partial_movie_files/LorenzAttractor/3780790482_3495902172_2080085775.mp4'
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/lorenz_attractor/1080p60/partial_movie_files/LorenzAttractor/4206466732_3595000638_1889681223.mp4'
