@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/mandelbrot_set/1080p60/partial_movie_files/MandelbrotSet/3544663784_357275215_223132457.mp4'
