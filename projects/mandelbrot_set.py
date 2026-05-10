@@ -1,7 +1,7 @@
 from manim import *
 import numpy as np
 
-# CODE DIVIDED IN TWO PARTS
+# CODE DIVIDED IN TWO PARTS (actually three)
 # First part: this first part was done when I knew nothing about fractals (in fact, I didn't even know what even was the Mandelbrot's Set I was trying to represent)
 # Orbit for a particular c (c=-0.74364388 + 0.1318259j, z0=0+0j))
 
@@ -92,10 +92,89 @@ class MandelbrotSet(MovingCameraScene):
     def construct(self):
 
         # Parameters
-        from_left_c = -0.8 - 0.2j
-        to_right_c = -0.7 + 0.2j
-        box_size = 0.001
+        from_left_c = -0.18 + 1.02j
+        to_right_c = -0.14 + 1.05j
+        box_size = 0.0001
+        iterations = 100
+
+        # All the information in the form of [[c1, i1], [c2, i2],..., [cn, in]]
+        data = mandelbrot_set(from_left_c, to_right_c, box_size, iterations)
+
+        # Scene
+        axes = Axes(
+            x_range=[np.real(from_left_c), np.real(to_right_c), box_size],
+            y_range=[np.imag(from_left_c), np.imag(to_right_c), box_size], 
+            x_length=np.real(to_right_c) - np.real(from_left_c),
+            y_length=np.imag(to_right_c) - np.imag(from_left_c)
+        )
+
+        colors = color_gradient([YELLOW, GREEN, ORANGE, RED, BLUE, PURPLE, DARK_GRAY, BLACK], iterations)
+
+        set = VGroup()
+        for value in data:
+            square = Square(side_length=box_size, color=colors[value[1]-1])
+            square.move_to(axes.c2p(np.real(value[0]), np.imag(value[0])))
+
+            set.add(square)
+
+        self.add(set)
+        if axes.width >= axes.height:
+            self.camera.frame.set(width=axes.x_length)
+            if axes.height > axes.width*9/16:
+                self.camera.frame.set(width=(axes.y_length)*16/9)
+        else:
+            self.camera.frame.set(height=axes.y_length)
+
+# Nice areas:
+# - Seahorse valley: from -0.8 -0.2j to -0.7 + 0.2j
+
+
+# Higher power Mandelbrot Set generalization
+
+def iterations_orbit_for_c_general(c, iterations, power):
+
+    z = [0+0j]
+    i = 0
+    for n in range(iterations):
+        # Mandelbrot complex iterated function
+        z_n = z[n]**power + c
+        z.append(z_n)
+        if np.abs(z_n) >= 2:
+            break
+        else:
+            i += 1
+    
+    return i
+
+def mandelbrot_set_general(from_left_c, to_right_c, box_size, iterations):
+
+    # All the data in the form of [c, i]
+    data = []
+
+    # Define each point in the complex plane
+    for real_dx in range(int((np.real(to_right_c) - np.real(from_left_c))/box_size)):
+        c_real = np.real(from_left_c) + box_size*real_dx
+        for imag_dy in range(int((np.imag(to_right_c) - np.imag(from_left_c))/box_size)):
+            c_imag = np.imag(from_left_c) + box_size*imag_dy
+            
+            c = c_real + c_imag*1j
+
+            # Calculate the iterations until |z|>2
+            i = iterations_orbit_for_c(c, iterations)
+
+            data.append([c, i])
+
+    return data
+class MandelbrotSetHigherOrders(MovingCameraScene):
+
+    def construct(self):
+
+        # Parameters
+        from_left_c = -1.75 - 1.5j
+        to_right_c = 0.5 + 1.5j
+        box_size = 0.01
         iterations = 50
+        power = 3
 
         # All the information in the form of [[c1, i1], [c2, i2],..., [cn, in]]
         data = mandelbrot_set(from_left_c, to_right_c, box_size, iterations)
