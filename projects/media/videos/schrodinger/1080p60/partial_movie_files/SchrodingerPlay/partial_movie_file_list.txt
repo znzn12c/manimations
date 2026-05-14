@@ -1,9 +1,2 @@
 # This file is used internally by FFMPEG.
-file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/schrodinger/1080p60/partial_movie_files/SchrodingerPlay/1693157059_1271305498_599097064.mp4'
-file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/schrodinger/1080p60/partial_movie_files/SchrodingerPlay/2574979123_2594002656_2347512708.mp4'
-file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/schrodinger/1080p60/partial_movie_files/SchrodingerPlay/4004777324_777908224_615623806.mp4'
-file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/schrodinger/1080p60/partial_movie_files/SchrodingerPlay/1718154974_3515533520_4223935376.mp4'
-file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/schrodinger/1080p60/partial_movie_files/SchrodingerPlay/1718154974_2128898253_3166924663.mp4'
-file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/schrodinger/1080p60/partial_movie_files/SchrodingerPlay/1718154974_3515533520_3103466281.mp4'
-file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/schrodinger/1080p60/partial_movie_files/SchrodingerPlay/1718154974_1293316340_3940164928.mp4'
-file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/schrodinger/1080p60/partial_movie_files/SchrodingerPlay/1718154974_3515533520_3052335263.mp4'
+file 'file:C:/Users/Usuario/Workspace/Mathematics/manimations/projects/media/videos/schrodinger/1080p60/partial_movie_files/SchrodingerPlay/446358507_1271305498_531512741.mp4'
